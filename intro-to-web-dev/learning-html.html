@@ -1,0 +1,37 @@
+<!-- 1. Native html color picker, file uploader -->
+<input type="color" value="#FF0000" />
+<input type="file" />
+
+<!-- 2. Generally avoid using id. One use case is deep-links (jump to part of page). -->
+<section>
+  <h1 id="test-content">Test Content area</h1>
+
+  <p>IDs are far less useful than classes. Whereas you'll be using classes everywhere and frequently, you should be
+    using IDs very sparingly. As you see in our above blog-posts HTML, we can re-use classes like post and post-title.
+    This is extremely important. As a coder, you want a piece of code and use it a lot. As coders, we want to write as
+    little code as possible (which we'll explore why later, for now trust me.) For now, be satisfied that I get to write
+    a little bit of code that governs post and have it affect every post on the page.</p>
+
+  <p>Let's contrast that with IDs. When you designate something with an ID, you're affirming that this is the only one
+    of those on your website. Not even just that page, but your whole website. Sometimes that is useful; just not very
+    often. Some other coders and tutorials will tell you to never use IDs; I think that's misguided. IDs are a
+    sledgehammer. Most problems don't require a sledgehammer. However sometimes you have problems that need a
+    sledgehammer and then you're really grateful that you have one.</p>
+
+</section>
+
+<a href="#test-content">test-content</a>
+
+<!-- 3. Form Practice -->
+<input value="Pre-filled data" />
+<input placeholder="This is a placeholder" />
+<input type="color" />
+<input type="number" />
+<input type="datetime-local" />
+<input type="radio" />
+<input type="checkbox" disabled checked />
+<input type="checkbox" />
+
+<!-- 4. <link> vs <style> tag -->
+<!-- link is used for external css files (typically how you load css) -->
+<!-- style is used for css files in same folder as html -->

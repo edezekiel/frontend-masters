@@ -1,0 +1,13 @@
+/* Don't style on tags! Style on classes. 
+UNLESS it's a global style across the site.*/
+
+/* So what should you use, generally speaking. Classes. Almost always classes. 
+This is the consensus in the front end development community. Classes are the 
+best way to style web pages. There are rare occasions that it may be useful 
+style on tags (like if you literally want to style every a tag on the page) but 
+those cases are rare. Use classes. Err on the side of using classes too much. */
+
+/* Holt puts this at the start of every project */
+* {
+  box-sizing: border-box;
+}
