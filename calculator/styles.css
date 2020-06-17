@@ -8,7 +8,7 @@
   width: 100vw;
   height: 100vh;
   font-family: monospace;
-  font-size: 2.5rem;
+  font-size: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  padding-right: 10px;
+  padding-right: 8px;
 }
 
 .buttons-container {
@@ -50,8 +50,16 @@
   margin: .05rem;
 }
 
+.calculator-button:hover {
+  background-color: darkgrey;
+}
+
 .calculator-button:last-child {
   background: orange;
+}
+
+.calculator-button:last-child:hover {
+  background: lightsalmon;
 }
 
 .double {
