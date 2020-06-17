@@ -25,7 +25,6 @@ function setStdout(num) {
 
 function updateCalculatorValue(num) {
   !calculator.currentOperation ? buildOperand(num) : buildOperand(num, false);
-  console.log(calculator);
 }
 
 function buildOperand(num, first = true) {
@@ -81,7 +80,6 @@ function handleCommand(selected) {
 
 function backspace() {
   let stdout = getStdout();
-  console.log(stdout)
   if (stdout.length > 0) {
     const backspacedValue = stdout.substring(0, stdout.length - 1);
     if (!calculator.currentOperation) {
