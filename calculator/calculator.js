@@ -48,10 +48,10 @@ function buildOperand(num, first = true) {
 function calculatorClick(event) {
   const selected = event.target.innerText;
 
-  if (parseInt(selected) || (parseInt(selected) === 0)) {
-    updateCalculatorValue(selected);
-  } else {
+  if (isNaN(parseInt(selected))) {
     handleCommand(selected);
+  } else {
+    updateCalculatorValue(selected);
   }
   event.stopPropagation();
 }
