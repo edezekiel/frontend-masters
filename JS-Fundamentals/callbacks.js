@@ -89,11 +89,7 @@ const emptyRoom = (newDevelopment) => {
     .forEach((room) => {
       const key = Object.keys(room)[0];
 
-      if (
-        !emptyRooms.includes(key) &&
-        !room[key] &&
-        !occupiedRooms.includes(key)
-      ) {
+      if (!emptyRooms.includes(key) && !room[key]) {
         emptyRooms.push(key);
       } else if (room[key]) {
         occupiedRooms.push(key);
