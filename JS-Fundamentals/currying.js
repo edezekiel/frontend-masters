@@ -4,7 +4,7 @@ const abc = function (a, b, c) {
 
 const _ = {};
 
-const curry = (func) => (a) => (b) => (c) => [a, b, c];
+const curry = (func) => (a) => (b) => (c) => func(a, b, c);
 
 _.curry = curry;
 
